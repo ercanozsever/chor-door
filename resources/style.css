@@ -1,0 +1,24 @@
+body {
+    background-color: #010165;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #door1, #door2, #door3 {
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .doors {
+    display: flex;
+  }
+  
+  button {
+    background-color: yellow;
+    width: 383px;
+    height: 30px;
+  }
