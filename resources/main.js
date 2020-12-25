@@ -2,8 +2,12 @@
 const doorOne = document.getElementById('door1');
 const doorTwo = document.getElementById('door2');
 const doorThree = document.getElementById('door3');
+const chor = document.getElementById('chor');
+const player = document.getElementById('player');
 let closedDoor = "https://content.codecademy.com/projects/chore-door/images/closed_door.svg";
 let currentlyPlaying = true;
+let chorScore = 0;
+let playerScore = 0;
 
 // IMAGES BEHIND THE DOORS
 const chorImg = "https://content.codecademy.com/projects/chore-door/images/robot.svg" ;
@@ -107,11 +111,24 @@ function resetGame() {
 const gameOver = (status) => {
     if (status === 'win') {
         playButton.innerHTML = 'You Win - Game Over - Play Again?';
+        chor.innerHTML = playerScore += 1;
     } else if (status === 'loose') {
         playButton.innerHTML = 'You Lost - Game Over - Play Again?';
+        player.innerHTML = chorScore += 1;
     }
     currentlyPlaying = false;
 };
 
+/*
+function scoreBoard() {
+    let chorScore = 0;
+    let playerScore = 0;
+    if (gameOver('win')) {
+        playerScore += 1;
+    } if else (gameOver('loose')) {
+        chorScore += 1;
+    }
+}
+*/
 
 randomDoorGenerator();

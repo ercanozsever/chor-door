@@ -61,3 +61,29 @@ body {
     width: 383px;
     height: 30px;
   }
+
+  #chor, #player {
+    color: whitesmoke;
+  }
+
+  .chor-score-board , .player-score-board {
+    background-color: yellow;
+    width: 185px;
+    height: 30px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #player , #chor {
+    margin: 0 10px;
+    padding: 2px 3px;
+    border: 2px solid black;
+    font-weight: bold;
+    color: crimson;
+  }
+
+  .score-board {
+    display: flex;
+  }
